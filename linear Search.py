@@ -1,7 +1,7 @@
 # list of random elements
 arr = [4, 65, 98, 34, 98, 21, 98, 9, 95, 27, 8,  7, 65, 4, 9 ,654, 89, 29, 83, 78, 32, 19, 79, 23, 64, 32]
 
-#taking input value to find in list
+#taking input value to find it in list
 value_to_find = int(input("Value to find :"))
 
 #this loop covers all elements in the list until it finds the desired value to find and prints -
