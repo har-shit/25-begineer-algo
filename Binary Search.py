@@ -1,21 +1,36 @@
-arr = [1, 3, 8, 9, 13, 21, 25, 27, 28, 32, 38, 44, 48, 49, 56, 59, 61, 62, 66, 77, 79, 83, 86, 88, 94, 99]
+#Creating a list with 1000 random elements
+from random import randint
+arr = []
+for i in range(1000):
+    x = randint(-10000, 10000)
+    arr.append(x)
 
-def BS(List, vf):
+
+        
+#Defining the Binary Search algorithm
+def BS(arr, vf):
 
     L = 0
     H = len(arr)-1
+    found = False    
 
-    while L <= H:
+    while L <= H and not found:
         mid = (L+H)//2
         if vf == arr[mid]:
-            print(f"Value Found At {arr.index(mid)}")
-            break
-        elif vf < arr[mid]:
-            H = (mid-1)
-        else:
+            found = True
+        elif vf > arr[mid]:
             L = mid+1
-    
+        else:
+            H = mid-1
+    if found == True:
+        print(f"Desired Value {vf} Found on index {arr.index(vf)}")
+    else:
+        print("Not Found") 
 
-VF = int(input("Input The Value To Find :"))
 
-BS(arr, VF)
+
+   
+#Driver code
+arr.sort()
+vf = int(input("Input The Value To Find in the random list :"))
+BS(arr, vf)
