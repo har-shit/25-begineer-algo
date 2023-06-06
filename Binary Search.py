@@ -1,8 +1,8 @@
 #Creating a list with 1000 random elements
 from random import randint
 arr = []
-for i in range(1000):
-    x = randint(-10000, 10000)
+for i in range(100):
+    x = randint(-100, 100)
     arr.append(x)
 
 
