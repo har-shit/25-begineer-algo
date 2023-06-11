@@ -1,4 +1,5 @@
 from random import randint
+#from linux
 
 L1 = []
 for i in range(10):
