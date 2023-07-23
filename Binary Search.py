@@ -12,8 +12,8 @@ vf = choice(arr)
 arr.sort()
 
 #printing the list and the element to find after sorting the list
-print(arr)
-print(f"Value to find is {vf}")
+print("\n", arr)
+print(f"\nValue to find is {vf}\n")
 
         
 #Defining the Binary Search algorithm
@@ -32,7 +32,7 @@ def BS(arr, vf):
         else:
             H = mid-1
     if found == True:
-        print(f"Desired Value {vf} Found on index {mid}")
+        print(f"Desired Value {vf} Found on index {mid} \n")
     else:
         print("Not Found") 
 
